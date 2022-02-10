@@ -1,5 +1,3 @@
-from dotenv import load_dotenv
-import os
 import requests
 import json
 # export REQUESTS_CA_BUNDLE="/home/vlaghe/proj/sec/burp_labs/burp.pem"
@@ -92,9 +90,9 @@ class MidasAPI:
 
 
 
-if __name__ == "__main__":
-    load_dotenv()
-    mapi = MidasAPI(os.getenv("TOKEN"))
-    print(mapi.getPortofolioStatus())
-    print(json.dumps(mapi.getAllAssets(), indent=4))
-    print(mapi.getAsset(2))
+# if __name__ == "__main__":
+#     load_dotenv()
+#     mapi = MidasAPI(os.getenv("TOKEN"))
+#     print(mapi.getPortofolioStatus())
+#     print(json.dumps(mapi.getAllAssets(), indent=4))
+#     print(mapi.getAsset(2))
